@@ -2,10 +2,12 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import LoginPage from "./LoginPage";
+import LoginPage from "./LoginPage"; // 👈 tu componente de login
 import HomePage from "./HomePage";
 import ServiciosPage from "./ServiciosPage";
 import PerfilPage from "./PerfilPage";
+
+
 import "./index.css";
 
 const rootElement = document.getElementById("root");
@@ -16,7 +18,7 @@ if (!rootElement) {
 
 createRoot(rootElement).render(
   <React.StrictMode>
-    <BrowserRouter basename="/MoveSmart">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/login" element={<LoginPage />} />

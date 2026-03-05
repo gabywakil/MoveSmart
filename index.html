@@ -4,18 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MoveSmart</title>
-    <script>
-      (function () {
-        var params = new URLSearchParams(window.location.search);
-        var path = params.get('path');
-        if (path) {
-          params.delete('path');
-          var rest = params.toString() ? '?' + params.toString() : '';
-          window.history.replaceState(null, null, path + rest + window.location.hash);
-        }
-      })();
-    </script>
+    <title>movesmart</title>
   </head>
   <body>
     <div id="root"></div>
